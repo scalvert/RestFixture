@@ -1,8 +1,12 @@
 package smartrics.rest.fitnesse.fixture.support;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 import org.apache.commons.httpclient.Credentials;
 import org.apache.commons.httpclient.HostConfiguration;
 import org.apache.commons.httpclient.HttpClient;
+import org.apache.commons.httpclient.NTCredentials;
 import org.apache.commons.httpclient.UsernamePasswordCredentials;
 import org.apache.commons.httpclient.auth.AuthScope;
 import org.apache.commons.httpclient.params.HostParams;
@@ -36,14 +40,40 @@ public class HttpClientBuilder {
 		}
 		HostParams hostParams = new HostParams();
 		hostConfiguration.setParams(hostParams);
-		String username = config == null ? null : config
-				.get("http.basicauth.username");
-		String password = config == null ? null : config
-				.get("http.basicauth.password");
-		if (username != null && password != null) {
-			Credentials defaultcreds = new UsernamePasswordCredentials(
-					username, password);
-			client.getState().setCredentials(AuthScope.ANY, defaultcreds);
+		Boolean useAuth = config == null ? null : config.getAsBoolean(
+				"http.use.auth", false);
+
+		if (useAuth) {
+			String authType = config == null ? null : config
+					.get("http.auth.type");
+
+			if (authType != null) {
+				String username = config == null ? null : config
+						.get("http.username");
+				String password = config == null ? null : config
+						.get("http.password");
+				if (username != null && password != null) {
+					Credentials credentials = null;
+					if (authType == "basic") {
+						credentials = new UsernamePasswordCredentials(username,
+								password);
+					} else if (authType == "ntlm") {
+						String domain = config == null ? null : config
+								.get("http.domain");
+						try {
+							credentials = new NTCredentials(username, password,
+									InetAddress.getLocalHost().getHostName(),
+									domain);
+						} catch (UnknownHostException e) {
+							e.printStackTrace();
+						}
+					}
+					AuthScope authScope = new AuthScope(null,
+							AuthScope.ANY_PORT, AuthScope.ANY_SCHEME);
+					client.getState()
+.setCredentials(authScope, credentials);
+				}
+			}
 		}
 		return client;
 	}
