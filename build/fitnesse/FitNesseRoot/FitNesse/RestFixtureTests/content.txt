@@ -1,0 +1,15 @@
+!1 Rest Fixture Acceptance Test Suite
+
+!contents -R2 -g
+
+!*****> Variables Settings
+!define jettyHost {localhost}
+!define jettyPort {8765}
+!define tempDirectory {/tmp}
+****!
+
+!*****> Classpath Settings
+!path E:\work\RestFixture/build/fitnesse/FitNesseRoot/FitNesse/RestFixtureTests/lib/*
+!path E:\work\RestFixture/build/fitnesse/FitNesseRoot/FitNesse/RestFixtureTests/lib/log4j.xml
+!path C:/fitnesse.jar
+****!

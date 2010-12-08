@@ -1,0 +1,406 @@
+ [property] Loading E:\work\RestFixture\properties\scalvert.properties
+ [property] Unable to find property file: E:\work\RestFixture\properties\scalvert.properties
+ [property] Loading E:\work\RestFixture\build.properties
+Build sequence for target(s) `fitnesse-deploy-remote' is [init, compile, compile-cat, package, fitnesse-deploy-remote]
+Complete build sequence is [init, compile, compile-cat, package, fitnesse-deploy-remote, dist-doc, fitnesse-exec-test, check.fitnesse.failure, fitnesse-test-remote, clean, fitnesse-start, fitnesse-deploy, fitnesse-stop, fitnesse-test, dist, full, test, -fitnesse-copy, ]
+
+init:
+    [mkdir] Skipping E:\work\RestFixture\build because it already exists.
+    [mkdir] Skipping E:\work\RestFixture\build\reports because it already exists.
+init:  duration 0 seconds
+
+compile:
+    [mkdir] Skipping E:\work\RestFixture\build\classes\main because it already exists.
+    [javac] E:\work\RestFixture\build.xml:53: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] smartrics\rest\config\Config.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\config\Config.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\RestFixture.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\RestFixture.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\RestFixtureConfig.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\RestFixtureConfig.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\RestFixtureWithSeq.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\RestFixtureWithSeq.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\BodyTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\BodyTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\BodyTypeAdapterFactory.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\BodyTypeAdapterFactory.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\ContentType.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\ContentType.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\HeadersTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\HeadersTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\HttpClientBuilder.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\HttpClientBuilder.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\JSONBodyTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\JSONBodyTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\RestDataTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\RestDataTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\StatusCodeTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\StatusCodeTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\StringTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\StringTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\TextBodyTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\TextBodyTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\Tools.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\Tools.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\Url.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\Url.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\Variables.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\Variables.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\XPathBodyTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\XPathBodyTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\XSDBodyTypeAdapter.java added as smartrics\rest\fitnesse\fixture\support\XSDBodyTypeAdapter.class is outdated.
+    [javac] Compiling 1 source file to E:\work\RestFixture\build\classes\main
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+'-d'
+'E:\work\RestFixture\build\classes\main'
+'-classpath'
+'E:\work\RestFixture\build\classes\main;E:\work\RestFixture\src\main\resources;E:\work\RestFixture\lib\commons\commons-beanutils.jar;E:\work\RestFixture\lib\commons\commons-codec-1.3.jar;E:\work\RestFixture\lib\commons\commons-collections-3.2.jar;E:\work\RestFixture\lib\commons\commons-httpclient-3.1.jar;E:\work\RestFixture\lib\commons\commons-lang-2.3.jar;E:\work\RestFixture\lib\commons\commons-logging-1.1.jar;E:\work\RestFixture\lib\fitnesse\fitnesse.jar;E:\work\RestFixture\lib\json-lib\ezmorph-1.0.4.jar;E:\work\RestFixture\lib\json-lib\json-lib-2.2.2-jdk15.jar;E:\work\RestFixture\lib\log4j\log4j-1.2.14.jar;E:\work\RestFixture\lib\oreilly\cos.jar;E:\work\RestFixture\lib\picbuilder\PicBuilder.jar;E:\work\RestFixture\lib\restclient\RestClient.jar;E:\work\RestFixture\lib\test\jetty\jetty-6.1.5.jar;E:\work\RestFixture\lib\test\jetty\jetty-util-6.1.5.jar;E:\work\RestFixture\lib\test\jetty\servlet-api-2.5-6.1.5.jar;E:\work\RestFixture\lib\test\junit-4.4.jar;E:\work\RestFixture\lib\xstream\jettison-1.0.1.jar;E:\work\RestFixture\lib\xstream\xstream-1.3.1.jar;C:\Program Files\ant-1.8.0\lib\ant-launcher.jar;E:\work\RestFixture;C:\Program Files\Java\jre6\lib\ext\QTJava.zip;C:\Program Files\ant-1.8.0\lib\ant-antlr.jar;C:\Program Files\ant-1.8.0\lib\ant-apache-bcel.jar;C:\Program Files\ant-1.8.0\lib\ant-apache-bsf.jar;C:\Program Files\ant-1.8.0\lib\ant-apache-log4j.jar;C:\Program Files\ant-1.8.0\lib\ant-apache-oro.jar;C:\Program Files\ant-1.8.0\lib\ant-apache-regexp.jar;C:\Program Files\ant-1.8.0\lib\ant-apache-resolver.jar;C:\Program Files\ant-1.8.0\lib\ant-apache-xalan2.jar;C:\Program Files\ant-1.8.0\lib\ant-commons-logging.jar;C:\Program Files\ant-1.8.0\lib\ant-commons-net.jar;C:\Program Files\ant-1.8.0\lib\ant-jai.jar;C:\Program Files\ant-1.8.0\lib\ant-javamail.jar;C:\Program Files\ant-1.8.0\lib\ant-jdepend.jar;C:\Program Files\ant-1.8.0\lib\ant-jmf.jar;C:\Program Files\ant-1.8.0\lib\ant-jsch.jar;C:\Program Files\ant-1.8.0\lib\ant-junit.jar;C:\Program Files\ant-1.8.0\lib\ant-netrexx.jar;C:\Program Files\ant-1.8.0\lib\ant-nodeps.jar;C:\Program Files\ant-1.8.0\lib\ant-stylebook.jar;C:\Program Files\ant-1.8.0\lib\ant-swing.jar;C:\Program Files\ant-1.8.0\lib\ant-testutil.jar;C:\Program Files\ant-1.8.0\lib\ant-trax.jar;C:\Program Files\ant-1.8.0\lib\ant.jar;C:\Program Files\ant-1.8.0\lib\xercesImpl.jar;C:\Program Files\ant-1.8.0\lib\xml-apis.jar;C:\Program Files\Java\jdk1.6.0_18\lib\tools.jar'
+'-sourcepath'
+'E:\work\RestFixture\src\main\java'
+'-target'
+'1.5'
+'-g'
+
+The ' characters around the executable and arguments are
+not part of the command.
+    [javac] File to be compiled:
+    E:\work\RestFixture\src\main\java\smartrics\rest\fitnesse\fixture\support\XSDBodyTypeAdapter.java
+compile:  duration 0 seconds
+
+compile-cat:
+    [mkdir] Skipping E:\work\RestFixture\build\classes\cat because it already exists.
+    [javac] E:\work\RestFixture\build.xml:84: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] smartrics\rest\test\fitnesse\fixture\FileUtilFixture.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\FileUtilFixture.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\HttpServer.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\HttpServer.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\HttpServerFixture.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\HttpServerFixture.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\LetTestActionFixture.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\LetTestActionFixture.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\Resource.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\Resource.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\Resources.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\Resources.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\ResourcesServlet.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\ResourcesServlet.class is up to date.
+compile-cat:  duration 0 seconds
+
+package:
+      [jar] smartrics\rest\config\Config.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/config/Config.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\MyFixtureListener.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/MyFixtureListener.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\RestFixture.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/RestFixture.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\RestFixtureConfig.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/RestFixtureConfig.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\RestFixtureWithSeq.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/RestFixtureWithSeq.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\BodyTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/BodyTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\BodyTypeAdapterFactory.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/BodyTypeAdapterFactory.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\ContentType.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/ContentType.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\HeadersTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/HeadersTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\HttpClientBuilder.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/HttpClientBuilder.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\JSONBodyTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/JSONBodyTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\RestDataTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/RestDataTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\StatusCodeTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/StatusCodeTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\StringTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/StringTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\TextBodyTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/TextBodyTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\Tools.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/Tools.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\Url.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/Url.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\Variables.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/Variables.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\XPathBodyTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/XPathBodyTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\XSDBodyTypeAdapter.class added as smartrics/rest/fitnesse/fixture/support/XSDBodyTypeAdapter.class is outdated.
+      [jar] smartrics omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/ is up to date.
+      [jar] smartrics\rest omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/ is up to date.
+      [jar] smartrics\rest\config omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/config/ is up to date.
+      [jar] smartrics\rest\fitnesse omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/ is up to date.
+      [jar] smartrics\rest\fitnesse\fixture omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/ is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/ is up to date.
+      [jar] Building jar: E:\work\RestFixture\build\RestFixture.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory smartrics/
+      [jar] adding directory smartrics/rest/
+      [jar] adding directory smartrics/rest/config/
+      [jar] adding directory smartrics/rest/fitnesse/
+      [jar] adding directory smartrics/rest/fitnesse/fixture/
+      [jar] adding directory smartrics/rest/fitnesse/fixture/support/
+      [jar] adding entry smartrics/rest/config/Config.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/MyFixtureListener.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/RestFixture.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/RestFixtureConfig.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/RestFixtureWithSeq.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/BodyTypeAdapter.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/BodyTypeAdapterFactory.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/ContentType.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/HeadersTypeAdapter.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/HttpClientBuilder.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/JSONBodyTypeAdapter.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/RestDataTypeAdapter.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/StatusCodeTypeAdapter.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/StringTypeAdapter.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/TextBodyTypeAdapter.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/Tools.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/Url.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/Variables.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/XPathBodyTypeAdapter.class
+      [jar] adding entry smartrics/rest/fitnesse/fixture/support/XSDBodyTypeAdapter.class
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: E:\work\RestFixture\build.xml:91: 
+      [jar] smartrics\rest\test\fitnesse\fixture\FileUtilFixture.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/FileUtilFixture.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\HttpServer.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/HttpServer.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\HttpServerFixture.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/HttpServerFixture.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\LetTestActionFixture.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/LetTestActionFixture.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\Resource.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/Resource.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\Resources.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/Resources.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\ResourcesServlet.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/ResourcesServlet.class is up to date.
+      [jar] smartrics omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/ is up to date.
+      [jar] smartrics\rest omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/ is up to date.
+      [jar] smartrics\rest\test omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/ is up to date.
+      [jar] smartrics\rest\test\fitnesse omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/ is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/ is up to date.
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: E:\work\RestFixture\build.xml:92: 
+package:  duration 0 seconds
+
+fitnesse-deploy-remote:
+Project base dir set to: E:\work\RestFixture
+  [antcall] calling target(s) [-fitnesse-copy] in build file E:\work\RestFixture\build.xml
+parsing buildfile E:\work\RestFixture\build.xml with URI = file:/E:/work/RestFixture/build.xml
+Project base dir set to: E:\work\RestFixture
+ [property] Loading E:\work\RestFixture\properties\scalvert.properties
+ [property] Unable to find property file: E:\work\RestFixture\properties\scalvert.properties
+ [property] Loading E:\work\RestFixture\build.properties
+Override ignored for property "temp.directory"
+Override ignored for property "fitnesse.home"
+Override ignored for property "build.target"
+Override ignored for property "fitnesse.port"
+Override ignored for property "fitnesse.host"
+Override ignored for property "build.debug"
+Override ignored for property "execute.cat"
+Override ignored for property "fitnesse.root.name"
+Override ignored for property "fitnesse.path"
+Override ignored for property "fitnesse.root"
+Override ignored for property "src.unit"
+Override ignored for property "src.cat"
+Override ignored for property "src"
+Override ignored for property "resources"
+Override ignored for property "build"
+Override ignored for property "build.fitnesse.home"
+Override ignored for property "build.fitnesse.root"
+Override ignored for property "build.fitnesse.test.root"
+Override ignored for property "dist"
+Override ignored for property "lib"
+Override ignored for property "reports"
+Override ignored for property "fitnesse.reports"
+Override ignored for property "artifacts"
+Build sequence for target(s) `-fitnesse-copy' is [init, compile, compile-cat, package, -fitnesse-copy]
+Complete build sequence is [init, compile, compile-cat, package, -fitnesse-copy, dist-doc, fitnesse-exec-test, fitnesse-deploy-remote, check.fitnesse.failure, fitnesse-test-remote, clean, fitnesse-start, fitnesse-deploy, fitnesse-stop, fitnesse-test, dist, full, test, ]
+  [antcall] Entering E:\work\RestFixture\build.xml...
+Build sequence for target(s) `-fitnesse-copy' is [init, compile, compile-cat, package, -fitnesse-copy]
+Complete build sequence is [init, compile, compile-cat, package, -fitnesse-copy, dist-doc, fitnesse-exec-test, fitnesse-deploy-remote, check.fitnesse.failure, fitnesse-test-remote, clean, fitnesse-start, fitnesse-deploy, fitnesse-stop, fitnesse-test, dist, full, test, ]
+
+init:
+    [mkdir] Skipping E:\work\RestFixture\build because it already exists.
+    [mkdir] Skipping E:\work\RestFixture\build\reports because it already exists.
+init:  duration 0 seconds
+
+compile:
+    [mkdir] Skipping E:\work\RestFixture\build\classes\main because it already exists.
+    [javac] E:\work\RestFixture\build.xml:53: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] smartrics\rest\config\Config.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\config\Config.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\RestFixture.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\RestFixture.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\RestFixtureConfig.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\RestFixtureConfig.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\RestFixtureWithSeq.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\RestFixtureWithSeq.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\BodyTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\BodyTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\BodyTypeAdapterFactory.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\BodyTypeAdapterFactory.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\ContentType.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\ContentType.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\HeadersTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\HeadersTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\HttpClientBuilder.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\HttpClientBuilder.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\JSONBodyTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\JSONBodyTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\RestDataTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\RestDataTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\StatusCodeTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\StatusCodeTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\StringTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\StringTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\TextBodyTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\TextBodyTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\Tools.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\Tools.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\Url.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\Url.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\Variables.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\Variables.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\XPathBodyTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\XPathBodyTypeAdapter.class is up to date.
+    [javac] smartrics\rest\fitnesse\fixture\support\XSDBodyTypeAdapter.java omitted as E:\work\RestFixture\build\classes\main\smartrics\rest\fitnesse\fixture\support\XSDBodyTypeAdapter.class is up to date.
+compile:  duration 0 seconds
+
+compile-cat:
+    [mkdir] Skipping E:\work\RestFixture\build\classes\cat because it already exists.
+    [javac] E:\work\RestFixture\build.xml:84: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] smartrics\rest\test\fitnesse\fixture\FileUtilFixture.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\FileUtilFixture.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\HttpServer.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\HttpServer.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\HttpServerFixture.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\HttpServerFixture.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\LetTestActionFixture.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\LetTestActionFixture.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\Resource.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\Resource.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\Resources.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\Resources.class is up to date.
+    [javac] smartrics\rest\test\fitnesse\fixture\ResourcesServlet.java omitted as E:\work\RestFixture\build\classes\cat\smartrics\rest\test\fitnesse\fixture\ResourcesServlet.class is up to date.
+compile-cat:  duration 0 seconds
+
+package:
+      [jar] smartrics\rest\config\Config.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/config/Config.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\MyFixtureListener.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/MyFixtureListener.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\RestFixture.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/RestFixture.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\RestFixtureConfig.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/RestFixtureConfig.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\RestFixtureWithSeq.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/RestFixtureWithSeq.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\BodyTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/BodyTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\BodyTypeAdapterFactory.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/BodyTypeAdapterFactory.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\ContentType.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/ContentType.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\HeadersTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/HeadersTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\HttpClientBuilder.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/HttpClientBuilder.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\JSONBodyTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/JSONBodyTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\RestDataTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/RestDataTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\StatusCodeTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/StatusCodeTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\StringTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/StringTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\TextBodyTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/TextBodyTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\Tools.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/Tools.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\Url.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/Url.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\Variables.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/Variables.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\XPathBodyTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/XPathBodyTypeAdapter.class is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support\XSDBodyTypeAdapter.class omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/XSDBodyTypeAdapter.class is up to date.
+      [jar] smartrics omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/ is up to date.
+      [jar] smartrics\rest omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/ is up to date.
+      [jar] smartrics\rest\config omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/config/ is up to date.
+      [jar] smartrics\rest\fitnesse omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/ is up to date.
+      [jar] smartrics\rest\fitnesse\fixture omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/ is up to date.
+      [jar] smartrics\rest\fitnesse\fixture\support omitted as E:\work\RestFixture\build\RestFixture.jar:smartrics/rest/fitnesse/fixture/support/ is up to date.
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: E:\work\RestFixture\build.xml:91: 
+      [jar] smartrics\rest\test\fitnesse\fixture\FileUtilFixture.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/FileUtilFixture.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\HttpServer.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/HttpServer.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\HttpServerFixture.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/HttpServerFixture.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\LetTestActionFixture.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/LetTestActionFixture.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\Resource.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/Resource.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\Resources.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/Resources.class is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture\ResourcesServlet.class omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/ResourcesServlet.class is up to date.
+      [jar] smartrics omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/ is up to date.
+      [jar] smartrics\rest omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/ is up to date.
+      [jar] smartrics\rest\test omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/ is up to date.
+      [jar] smartrics\rest\test\fitnesse omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/ is up to date.
+      [jar] smartrics\rest\test\fitnesse\fixture omitted as E:\work\RestFixture\build\RestFixture_fitnesse.jar:smartrics/rest/test/fitnesse/fixture/ is up to date.
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: E:\work\RestFixture\build.xml:92: 
+package:  duration 0 seconds
+
+-fitnesse-copy:
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\AdvancedTests\TwitterTests\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\AdvancedTests\TwitterTests\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\AdvancedTests\TwitterTests
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\AdvancedTests
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\DeleteTests\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\DeleteTests\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\DeleteTests
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\GetTests\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\GetTests\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\GetTests
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\LetTests\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\LetTests\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\LetTests
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PostTests\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PostTests\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PostTests
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\properties.xml
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PutTests\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PutTests\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PutTests
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SequenceDiagramGenerationTests\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SequenceDiagramGenerationTests\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SequenceDiagramGenerationTests
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SetUp\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SetUp\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SetUp
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteSetUp\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteSetUp\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteSetUp
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteTearDown\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteTearDown\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteTearDown
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\content.txt
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-beanutils.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-codec-1.3.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-collections-3.2.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-httpclient-3.1.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-lang-2.3.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-logging-1.1.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\cos.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\ezmorph-1.0.4.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\fitnesse.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\jettison-1.0.1.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\jetty-6.1.5.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\jetty-util-6.1.5.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\json-lib-2.2.2-jdk15.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\junit-4.4.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\log4j-1.2.14.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\log4j.xml
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\PicBuilder.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\RestClient.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\RestFixture.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\RestFixture_fitnesse.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\servlet-api-2.5-6.1.5.jar
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\xstream-1.3.1.jar
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests\lib
+   [delete] Deleting C:\FitNesseRoot\FitNesse\RestFixtureTests\properties.xml
+   [delete] Deleting directory C:\FitNesseRoot\FitNesse\RestFixtureTests
+    [mkdir] Created dir: C:\FitNesseRoot\FitNesse\RestFixtureTests\lib
+     [copy] commons\commons-beanutils.jar added as commons-beanutils.jar doesn't exist.
+     [copy] commons\commons-codec-1.3.jar added as commons-codec-1.3.jar doesn't exist.
+     [copy] commons\commons-collections-3.2.jar added as commons-collections-3.2.jar doesn't exist.
+     [copy] commons\commons-httpclient-3.1.jar added as commons-httpclient-3.1.jar doesn't exist.
+     [copy] commons\commons-lang-2.3.jar added as commons-lang-2.3.jar doesn't exist.
+     [copy] commons\commons-logging-1.1.jar added as commons-logging-1.1.jar doesn't exist.
+     [copy] fitnesse\fitnesse.jar added as fitnesse.jar doesn't exist.
+     [copy] json-lib\ezmorph-1.0.4.jar added as ezmorph-1.0.4.jar doesn't exist.
+     [copy] json-lib\json-lib-2.2.2-jdk15.jar added as json-lib-2.2.2-jdk15.jar doesn't exist.
+     [copy] log4j\log4j-1.2.14.jar added as log4j-1.2.14.jar doesn't exist.
+     [copy] oreilly\cos.jar added as cos.jar doesn't exist.
+     [copy] picbuilder\PicBuilder.jar added as PicBuilder.jar doesn't exist.
+     [copy] restclient\RestClient.jar added as RestClient.jar doesn't exist.
+     [copy] test\jetty\jetty-6.1.5.jar added as jetty-6.1.5.jar doesn't exist.
+     [copy] test\jetty\jetty-util-6.1.5.jar added as jetty-util-6.1.5.jar doesn't exist.
+     [copy] test\jetty\servlet-api-2.5-6.1.5.jar added as servlet-api-2.5-6.1.5.jar doesn't exist.
+     [copy] test\junit-4.4.jar added as junit-4.4.jar doesn't exist.
+     [copy] xstream\jettison-1.0.1.jar added as jettison-1.0.1.jar doesn't exist.
+     [copy] xstream\xstream-1.3.1.jar added as xstream-1.3.1.jar doesn't exist.
+     [copy] No sources found.
+     [copy] log4j.xml added as log4j.xml doesn't exist.
+     [copy] No sources found.
+     [copy] RestFixture.jar added as RestFixture.jar doesn't exist.
+     [copy] RestFixture_fitnesse.jar added as RestFixture_fitnesse.jar doesn't exist.
+     [copy] No sources found.
+     [copy] Copying 22 files to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib
+     [copy] Copying E:\work\RestFixture\lib\test\jetty\jetty-util-6.1.5.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\jetty-util-6.1.5.jar
+     [copy] Copying E:\work\RestFixture\lib\fitnesse\fitnesse.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\fitnesse.jar
+     [copy] Copying E:\work\RestFixture\build\RestFixture_fitnesse.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\RestFixture_fitnesse.jar
+     [copy] Copying E:\work\RestFixture\lib\test\jetty\servlet-api-2.5-6.1.5.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\servlet-api-2.5-6.1.5.jar
+     [copy] Copying E:\work\RestFixture\lib\oreilly\cos.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\cos.jar
+     [copy] Copying E:\work\RestFixture\lib\commons\commons-httpclient-3.1.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-httpclient-3.1.jar
+     [copy] Copying E:\work\RestFixture\lib\commons\commons-collections-3.2.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-collections-3.2.jar
+     [copy] Copying E:\work\RestFixture\lib\xstream\jettison-1.0.1.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\jettison-1.0.1.jar
+     [copy] Copying E:\work\RestFixture\src\main\resources\log4j.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\log4j.xml
+     [copy] Copying E:\work\RestFixture\lib\restclient\RestClient.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\RestClient.jar
+     [copy] Copying E:\work\RestFixture\lib\commons\commons-codec-1.3.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-codec-1.3.jar
+     [copy] Copying E:\work\RestFixture\build\RestFixture.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\RestFixture.jar
+     [copy] Copying E:\work\RestFixture\lib\test\junit-4.4.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\junit-4.4.jar
+     [copy] Copying E:\work\RestFixture\lib\commons\commons-beanutils.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-beanutils.jar
+     [copy] Copying E:\work\RestFixture\lib\xstream\xstream-1.3.1.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\xstream-1.3.1.jar
+     [copy] Copying E:\work\RestFixture\lib\picbuilder\PicBuilder.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\PicBuilder.jar
+     [copy] Copying E:\work\RestFixture\lib\json-lib\ezmorph-1.0.4.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\ezmorph-1.0.4.jar
+     [copy] Copying E:\work\RestFixture\lib\json-lib\json-lib-2.2.2-jdk15.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\json-lib-2.2.2-jdk15.jar
+     [copy] Copying E:\work\RestFixture\lib\log4j\log4j-1.2.14.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\log4j-1.2.14.jar
+     [copy] Copying E:\work\RestFixture\lib\commons\commons-lang-2.3.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-lang-2.3.jar
+     [copy] Copying E:\work\RestFixture\lib\commons\commons-logging-1.1.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\commons-logging-1.1.jar
+     [copy] Copying E:\work\RestFixture\lib\test\jetty\jetty-6.1.5.jar to C:\FitNesseRoot\FitNesse\RestFixtureTests\lib\jetty-6.1.5.jar
+     [copy] Copying 24 files to C:\FitNesseRoot\FitNesse\RestFixtureTests
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\SuiteTearDown\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteTearDown\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\SetUp\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SetUp\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\AdvancedTests\TwitterTests\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\AdvancedTests\TwitterTests\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\SetUp\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SetUp\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\AdvancedTests\TwitterTests\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\AdvancedTests\TwitterTests\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\GetTests\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\GetTests\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\DeleteTests\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\DeleteTests\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\SequenceDiagramGenerationTests\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SequenceDiagramGenerationTests\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\SuiteSetUp\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteSetUp\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\PutTests\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PutTests\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\content.txt
+Replacing: @TEMP_DIRECTORY@ -> /tmp
+Replacing: @FITNESSE_TEST_ROOT@ -> C:/FitNesseRoot/FitNesse/RestFixtureTests
+Replacing: @FITNESSE_TEST_ROOT@ -> C:/FitNesseRoot/FitNesse/RestFixtureTests
+Replacing: @FITNESSE_HOME@ -> C:
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\PutTests\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PutTests\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\GetTests\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\GetTests\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\LetTests\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\LetTests\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\SuiteSetUp\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteSetUp\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\DeleteTests\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\DeleteTests\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\PostTests\properties.xml to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PostTests\properties.xml
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\LetTests\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\LetTests\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\PostTests\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\PostTests\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\SuiteTearDown\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SuiteTearDown\content.txt
+     [copy] Copying E:\work\RestFixture\fitdocs\RestFixtureTests\BasicTests\SequenceDiagramGenerationTests\content.txt to C:\FitNesseRoot\FitNesse\RestFixtureTests\BasicTests\SequenceDiagramGenerationTests\content.txt
+-fitnesse-copy:  duration 0 seconds
+  [antcall] Exiting E:\work\RestFixture\build.xml.
+fitnesse-deploy-remote:  duration 0 seconds
+
+BUILD SUCCESSFUL
